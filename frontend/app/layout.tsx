@@ -1,24 +1,33 @@
-import { Providers } from './providers'
-import { ClerkProvider } from '@clerk/nextjs'
-import '../styles/globals.css';
-import Header from '../components/Header';
+import '../styles/globals.css'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  console.log("Clerk Key:", process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
-  
+import React from 'react';
+import { Providers } from './providers';
+import { ClerkProvider } from '@clerk/nextjs';
+import Header from '../components/Header';
+import { NextUIProvider } from '@nextui-org/react'
+
+export const metadata = {
+  title: 'Call Center Agency',
+  description: 'A Next.js 14.2 call center agency application',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+      <ClerkProvider>
         <body>
           <Providers>
-            <div id="root">
-              <Header />
-              <main>{children}</main>
-              <footer>Footer Content</footer>
-            </div>
+            <Header />
+            <NextUIProvider>
+              {children}
+            </NextUIProvider>
           </Providers>
         </body>
       </ClerkProvider>
     </html>
-  );
+  )
 }

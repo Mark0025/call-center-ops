@@ -1,9 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Card, CardBody, CardHeader, Input, Select, Textarea, Button } from "@nextui-org/react";
-
-
+import { Card, CardBody, CardHeader, Input, Select, SelectItem, Textarea, Button } from "@nextui-org/react";
 
 const AgentForm: React.FC = () => {
     const [name, setName] = useState<string>('');
@@ -99,12 +97,12 @@ const AgentForm: React.FC = () => {
                         onChange={(e) => setTwilioNumber(e.target.value)}
                     >
                         {twilioNumbers.map((number) => (
-                            <Select.Option key={number} value={number}>
+                            <SelectItem key={number} value={number}>
                                 {number}
-                            </Select.Option>
+                            </SelectItem>
                         ))}
                         {twilioNumbers.length === 0 && (
-                            <Select.Option value="">No numbers available</Select.Option>
+                            <SelectItem value="">No numbers available</SelectItem>
                         )}
                     </Select>
                     <Input
