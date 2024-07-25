@@ -4,9 +4,11 @@ import '../styles/globals.css';
 import Header from '../components/Header';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  console.log("Clerk Key:", process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
+  
   return (
-    <ClerkProvider>
-      <html lang="en">
+    <html lang="en">
+      <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
         <body>
           <Providers>
             <div id="root">
@@ -16,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </Providers>
         </body>
-      </html>
-    </ClerkProvider>
+      </ClerkProvider>
+    </html>
   );
 }
