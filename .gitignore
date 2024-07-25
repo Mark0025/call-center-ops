@@ -44,3 +44,11 @@ next-env.d.ts
 
 # Prisma
 /prisma/.env
+
+# Cache
+.cache
+/dist
+
+# IDE
+.vscode
+.idea
