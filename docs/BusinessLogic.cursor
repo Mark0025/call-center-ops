@@ -25,10 +25,13 @@
    - Clean data using Pandas
    - Extract name and phone number(s) for AI agents
 
-5. **AI Voice Agent Flow**:
-   - Use Twilio to execute calls
-   - Follow series of scripts for high-value conversations
-   - Update call status and attempt number after each call
+5. **AI Voice Agent**:
+   - Use Twilio to make and receive calls.
+   - Follow predefined scripts for high-value conversations.
+   - Update call status and attempt number after each call.
+   - Use Langchain for natural language understanding.
+   - Implement AI models to handle common queries and responses.
+   - Continuously improve AI models based on call data.
 
 ## Next Steps
 
@@ -50,3 +53,4 @@
 - [Prisma Documentation](https://www.prisma.io/docs)
 - [Twilio API Documentation](https://www.twilio.com/docs)
 - [Langchain Documentation](https://js.langchain.com/docs/)
+- [AI Voice Agent Documentation](./AI Voice Agent.cursor)

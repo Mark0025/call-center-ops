@@ -50,5 +50,9 @@ To get started with the project, follow these steps:
 2. Install dependencies for both backend and frontend.
 3. Run the backend and frontend servers.
 
+## AI Voice Agent
+
+The AI Voice Agent is responsible for handling calls using Twilio, managing conversation scripts, and integrating with CRM systems. It uses Langchain for natural language understanding and AI models to handle common queries and responses.
+
 ## License
 This project is licensed under the MIT License.

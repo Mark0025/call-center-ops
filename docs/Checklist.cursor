@@ -37,8 +37,12 @@
    - Set up Twilio for making and receiving calls.
    - Implement functions to handle call statuses and responses.
 
-7. **Langchain Integration**
-   - Integrate Langchain for AI-powered conversations.
+7. **AI Voice Agent**
+   - Set up Twilio for making and receiving calls.
+   - Implement script management and editing features.
+   - Develop AI models for natural language understanding.
+   - Integrate with CRM systems for data synchronization.
+   - Create reporting and analytics dashboards.
 
 8. **Endato API Integration**
    - Implement phone number validation using Endato API.

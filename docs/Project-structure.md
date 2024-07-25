@@ -89,7 +89,10 @@ project-root/
 │   ├── Call.ts
 │   ├── KPI.ts
 │   └── User.ts
-├── utils/
+├── ai-voice-agent/
+│   ├── scripts/
+│   ├── models/
+│   └── services/
 │   └── csvProcessor.ts
 ├── prisma/
 │   └── schema.prisma
