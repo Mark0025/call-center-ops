@@ -1,0 +1,68 @@
+{
+    "info": {
+      "name": "Call Center Agency API"
+    },
+    "item": [
+      {
+        "name": "Create User",
+        "request": {
+          "body": {
+            "raw": {
+              "name": "John Doe",
+              "email": "john@example.com"
+            }
+          }
+        }
+      },
+      {
+        "name": "Create Agent",
+        "request": {
+          "body": {
+            "raw": {
+              "name": "Agent Smith",
+              "email": "smith@example.com"
+            }
+          }
+        }
+      },
+      {
+        "name": "Create Call",
+        "request": {
+          "body": {
+            "raw": {
+              "caller": "John Doe",
+              "receiver": "Jane Doe",
+              "duration": 120,
+              "status": "completed",
+              ""
+            }
+          }
+        }
+      },
+      {
+        "name": "Create KPI",
+        "request": {
+          "body": {
+            "raw": {
+              "metric": "Customer Satisfaction",
+              "value": 95
+            }
+          }
+        }
+      },
+      {
+        "name": "Upload CSV",
+        "request": {
+          "body": {
+            "formdata": [
+              {
+                "key": "file",
+                "type": "file",
+                "src": "<path-to-your-csv-file>"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

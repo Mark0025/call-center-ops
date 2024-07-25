@@ -1,0 +1,20 @@
+.header {
+  background-color: #000;
+  color: #00f;
+  padding: 1rem;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
