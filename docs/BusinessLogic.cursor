@@ -1,0 +1,52 @@
+
+## Business Logic
+
+1. **Call Statuses**:
+   - Verified: Correct number (talking to the person and they confirm their name)
+   - Wrong Number: Person says it's not them or wrong number
+   - No Answer: No one answers
+   - Voicemail: Leave a message asking for a callback
+   - Dead: Busy signal or number no longer in service
+   - DNC (Do Not Call): Person does not want to be called
+   - No Status: Initial status of all phone numbers
+
+2. **Call Attempts**:
+   - A01, A02, A03: Attempt 1, 2, 3
+   - A04, A05, A06: Attempt 4, 5, 6
+   - A07, A08, A09: Attempt 7, 8, 9
+
+3. **Agent Performance**:
+   - Focus on quality of agent performance
+   - Recreate the best sales agents on the team
+   - Track KPIs for each agent
+
+4. **CSV Processing**:
+   - Upload CSV files to /call-list directory
+   - Clean data using Pandas
+   - Extract name and phone number(s) for AI agents
+
+5. **AI Voice Agent Flow**:
+   - Use Twilio to execute calls
+   - Follow series of scripts for high-value conversations
+   - Update call status and attempt number after each call
+
+## Next Steps
+
+1. Set up Next.js 14.2 project with App Router
+2. Implement Prisma schema for MongoDB
+3. Create API routes for agents, calls, and KPIs
+4. Develop frontend components using NextUI
+5. Integrate Twilio for call handling
+6. Implement CSV processing and data cleaning
+7. Develop AI voice agent logic with Langchain
+8. Set up authentication and authorization
+9. Implement dashboard and reporting features
+10. Conduct thorough testing and optimization
+
+## Resources
+
+- [Next.js 14.2 Documentation](https://nextjs.org/docs)
+- [NextUI Component Library](https://nextui.org/)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Twilio API Documentation](https://www.twilio.com/docs)
+- [Langchain Documentation](https://js.langchain.com/docs/)
